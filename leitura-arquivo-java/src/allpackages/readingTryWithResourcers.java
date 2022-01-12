@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-//versao recomendada pelo prof em caso de allpackages.leitura de arquivo de texto
 public class readingTryWithResourcers {
     public static void main(String[] args) {
 
