@@ -14,8 +14,26 @@ public class List<T> {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("List [").append(head.getValue()).append("]");
+        builder.append("List [").append(head.getValue())
+                .append(" ")
+//                .append(head.getNext())
+                .append("]");
         return builder.toString();
     }
+
+
+
+//    @Override
+//    public String toString() {
+//        StringBuffer sb = new StringBuffer();
+//        sb.append("[");
+//        Node<T> p = head;
+//        while (p != null) {
+//            sb.append(p.getValue() + " ");
+//            p = p.getNext();
+//        }
+//        sb.append("]");
+//        return sb.toString();
+//    }
 
 }
