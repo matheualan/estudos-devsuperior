@@ -30,6 +30,7 @@ public class EmployeeService implements GenericService<Employee, EmployeeDTO, Lo
 //        List<Employee> list = employeeRepository.findAll();
 //        return list.stream()
 //                .map(dto -> new EmployeeDTO(dto))
+////                .map(EmployeeDTO::new)
 //                .collect(Collectors.toList());
 //    }
 

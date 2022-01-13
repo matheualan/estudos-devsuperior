@@ -3,6 +3,7 @@ package generics.springboot.generics.controller;
 import generics.springboot.generics.dto.EmployeeDTO;
 import generics.springboot.generics.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,7 +29,8 @@ public class EmployeeController {
     @GetMapping
     public ResponseEntity<List<EmployeeDTO>> findAll() {
         List<EmployeeDTO> list = service.findAll();
-        return ResponseEntity.ok(list);
+        return new ResponseEntity<>(list, HttpStatus.OK);
+//        return ResponseEntity.ok(list);
     }
 
 }
