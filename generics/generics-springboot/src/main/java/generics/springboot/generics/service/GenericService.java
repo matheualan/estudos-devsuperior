@@ -20,6 +20,7 @@ public interface GenericService<T extends Convertible<DTO>, DTO, ID> {
         List<T> list = getRepository().findAll();
         return list.stream()
                 .map(dto -> dto.convert())
+//                .map(Convertible::convert)
                 .collect(Collectors.toList());
     }
 }
